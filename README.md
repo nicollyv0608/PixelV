@@ -1,2 +1,2 @@
 # PixelV
-lading page da empresa pixelV
+landing page da empresa pixelV
