@@ -245,7 +245,7 @@ header .container-grid {
     line-height: 1.5;
 }
 
-#servicos .card svg{
+#servicos .card svg {
     color: var(--roxo-pixel);
     height: 75px;
 }
@@ -254,21 +254,21 @@ header .container-grid {
     border: solid 3px var(--Verde-PixelV);
 }
 
-#servicos .card:hover h3{
+#servicos .card:hover h3 {
     color: var(--Verde-PixelV);
 }
 
-#servicos .card:hover svg{
+#servicos .card:hover svg {
     fill: var(--Verde-PixelV);
 }
 
 /* ------------cases de sucesso */
 
-#case h2{
+#case h2 {
     margin-right: 5px;
 }
 
-#cases{
+#cases {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -276,13 +276,143 @@ header .container-grid {
     margin-bottom: 120px;
 }
 
-#cases img{
+#cases img {
     height: 300px;
     border-radius: 40px;
-
 }
 
-#meuCarrossel{
+#meuCarrossel {
     max-width: 1170px;
     width: 90%;
+}
+
+/* ---------contato----------- */
+#contato{
+    text-align: center;
+    padding-bottom: 100px;
+    margin-bottom: 100px;
+}
+
+#contato .titulo{
+    justify-content: center;
+    margin-bottom: 55px;
+}
+
+#contato h2{
+    margin-left: 5px;
+}
+
+#contato form{
+    width: 90%;
+    max-width: 980px;
+
+    margin: 0% auto;
+    padding: 60px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border-radius: 40px;
+    background-color: var(--Contato);
+    border: solid 3px var(--roxo-pixel);
+
+    color: var(--preto);
+    font-family: "recursive" Sans-linear;
+    font-size: 17px;
+}
+
+.campo{
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+
+.campo-descricao{
+    width: 60%;
+
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-bottom: 30%;
+}
+
+.campo input{
+    height: 40px;
+
+    color: var(--preto);
+    background-color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    text-indent: 10px;
+    outline: none;
+}
+
+.campo-descricao textarea{
+    color: var(--preto);
+    border-radius: 4px;
+
+    outline: none;
+
+    padding: 10px;
+
+    resize: none;
+}
+
+.campo-lable,
+.campo-descricao label {
+    margin-bottom: 15px;
+}
+
+.campo input,
+.campo-descricao textarea {
+    font-family: "recursive", Sans-linear;
+    font-size: 17px;
+}
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder{
+    color: #a0a0a0;
+}
+
+.campo input:focus,
+.campo-descricao textarea:focus{
+    outline: 2px solid var(--Verde-PixelV);
+}
+
+#contato form button{
+    height: 40px;
+    width: 60%;
+
+    background-color: var(--roxo-pixel);
+    color: var(--branco);
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 17px;
+    font-family: "Recursive",Sans-linear;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+    
+    transition: backgroud-color 500ms;
+    
+}
+
+#contato form button:hover{
+    background-color: var(--Verde-PixelV);
 }
